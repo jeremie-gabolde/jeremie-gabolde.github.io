@@ -72,26 +72,6 @@ input, select, textarea {
 	appearance: none;
 }
 
-/* Custom Shit */
-
-@keyframes bg-change {
-	0% {
-		filter:hue-rotate(0deg) contrast(1.3) sepia(.5);
-	}
-	50% {
-		filter:hue-rotate(180deg) contrast(1.3) sepia(.5);
-	}
-	100% {
-		filter:hue-rotate(360deg) contrast(1.3) sepia(.5);
-	}
-}
-
-#menu {
-	z-index: 2;
-	position: fixed;
-	bottom: 2em;
-}
-
 
 
 /* Basic */
@@ -1788,7 +1768,7 @@ input, select, textarea {
 		cursor: pointer;
 		text-decoration: none;
 		outline: 0;
-		padding: .5em .5em .5em .5em;
+		padding: .5em 1.5em .5em 1.5em;
 		text-align: center;
 		font-size: 16pt;
 		/*border-radius: 3em;
@@ -2035,7 +2015,7 @@ input, select, textarea {
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
 		margin: 0;
-		padding: 14em 0 12em 0;
+		padding: 14em 0 13em 0;
 		cursor: default;
 		border: solid 8px #000;
 		background-color: #00000069;
@@ -2682,3 +2662,37 @@ input, select, textarea {
 			}
 
 	}
+
+
+/* Custom Shit */
+
+@keyframes bg-change {
+	0% {
+		filter:hue-rotate(0deg) contrast(1.3) sepia(.5);
+	}
+	50% {
+		filter:hue-rotate(180deg) contrast(1.3) sepia(.5);
+	}
+	100% {
+		filter:hue-rotate(360deg) contrast(1.3) sepia(.5);
+	}
+}
+
+#menu-left {
+	z-index: 2;
+	position: fixed;
+	bottom: 4em;
+}
+#menu-left .button{
+	text-align: left;
+}
+
+#menu-right {
+	z-index: 2;
+	position: fixed;
+	right: 0;
+	bottom: 4em;
+}
+#menu-right .button{
+	text-align: right;
+}
