@@ -1969,9 +1969,10 @@ input, select, textarea {
 
 /* Icons */
 
-	.icon {
+	.icon, .fas {
 		text-decoration: none;
 		text-decoration: none;
+		font-size: 26pt;
 	}
 
 		.icon:before {
