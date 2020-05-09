@@ -2449,7 +2449,7 @@ input, select, textarea {
 
 /* Mobile */
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 1680px) { /*736*/
 
 		/* Basic */
 
