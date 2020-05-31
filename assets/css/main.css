@@ -2191,6 +2191,7 @@ input, select, textarea {
 			/*border: solid 4px #000;*/
 			display: inline-block;
 			margin: 0 0 3em 0;
+			pointer-events: all;
 		}
 
 		#footer .copyright {
