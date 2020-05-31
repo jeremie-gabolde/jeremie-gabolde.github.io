@@ -1841,7 +1841,7 @@ input, select, textarea {
 			top: -9em;
 			left: 50%;
 			height: 9em;
-			border-left: solid 4px #000;
+			/*border-left: solid 4px #000;*/
 		}
 
 		.box:before {
@@ -1863,7 +1863,7 @@ input, select, textarea {
 
 		.box.style1 {
 			background: #000;
-			padding: 3em;
+			padding: 1em;
 		}
 
 			.box.style1 .image {
@@ -1910,7 +1910,7 @@ input, select, textarea {
 
 			.box.style1.left .inner {
 				margin-right: 50%;
-				padding-right: 3em;
+				padding-right: 1em;
 			}
 
 		.box.style2 {
@@ -2023,8 +2023,9 @@ input, select, textarea {
 		margin: 0;
 		padding: 14em 0 13em 0;
 		cursor: default;
-		border: solid 8px #000;
+		/*border: solid 8px #000;*/
 		background-color: #00000069;
+		pointer-events: none;
 	}
 
 		#header header {
@@ -2186,7 +2187,7 @@ input, select, textarea {
 		#footer .icons {
 			padding: 0.75em 2em 0.75em 2em;
 			border-radius: 3em;
-			border: solid 4px #000;
+			/*border: solid 4px #000;*/
 			display: inline-block;
 			margin: 0 0 3em 0;
 		}
@@ -2534,7 +2535,7 @@ input, select, textarea {
 		/* Box */
 
 			.box {
-				margin-top: 4.5em;
+				margin-top: 9em;
 			}
 
 				.box:after {
@@ -2592,6 +2593,7 @@ input, select, textarea {
 
 			#header {
 				padding: 6em 0 6em 0;
+				pointer-events: none;
 			}
 
 				#header header {
@@ -2719,11 +2721,39 @@ input, select, textarea {
 }
 
 .inner p {
-	margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 100px;
+	margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0px;
 }
 
 #header h1 {
 	color: white;
+}
+
+.image.thumb:after {
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 0.35em;
+    /*border: solid 3px rgba(255, 255, 255, 0.5);*/
+    color: #fff;
+    content: '✚';
+    display: inline-block;
+    font-size: 4em;
+    font-weight: 400;
+    left: 50%;
+    line-height: 2.25em;
+    margin: -1.25em 0 0 -3em;
+    opacity: 0;
+    padding: 0 1.5em;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 50%;
+    white-space: nowrap;
+}
+
+.image.thumb:hover:after {
+    opacity: 1.0;
 }
