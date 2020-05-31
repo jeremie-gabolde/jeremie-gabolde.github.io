@@ -2739,20 +2739,30 @@ input, select, textarea {
     /*border: solid 3px rgba(255, 255, 255, 0.5);*/
     color: #fff;
     content: '✚';
-    display: inline-block;
+    /*display: inline-block;*/
     font-size: 4em;
     font-weight: 400;
     left: 50%;
-    line-height: 2.25em;
-    margin: -1.25em 0 0 -3em;
-    opacity: 0;
-    padding: 0 1.5em;
+    line-height: 0em;
+    opacity: 0.5;
     position: absolute;
     text-align: center;
     text-decoration: none;
-    top: 50%;
     white-space: nowrap;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    text-align: center;
 }
+
+/*
+@media screen and (max-width: 840px) {
+	.image.thumb:after {
+		opacity: .5;
+	}
+}
+*/
 
 .image.thumb:hover:after {
     opacity: 1.0;
