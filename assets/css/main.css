@@ -2756,6 +2756,7 @@ input, select, textarea {
     right: 0;
     top: 50%;
     text-align: center;
+	animation: fadein 2s infinite;
 }
 
 /*
@@ -2768,4 +2769,18 @@ input, select, textarea {
 
 .image.thumb:hover:after {
     opacity: 1.0;
+}
+
+@keyframes fadein { 
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
